@@ -3,8 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'kotlin-parcelize'
-    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
+//    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
 }
 
 android {
@@ -75,9 +74,9 @@ dependencies {
     implementation "androidx.activity:activity-compose:1.6.0-alpha01"
     implementation "com.google.accompanist:accompanist-swiperefresh:0.24.2-alpha"
 
-    // Compose Nav Destinations
-    implementation 'io.github.raamcosta.compose-destinations:core:1.1.2-beta'
-    ksp 'io.github.raamcosta.compose-destinations:ksp:1.1.2-beta'
+//    // Compose Nav Destinations
+//    implementation 'io.github.raamcosta.compose-destinations:core:1.1.2-beta'
+//    ksp 'io.github.raamcosta.compose-destinations:ksp:1.1.2-beta'
 
     // Coil
     implementation "io.coil-kt:coil-compose:1.4.0"
@@ -101,4 +100,5 @@ dependencies {
 
     // Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:2.4.3"
+
 }
