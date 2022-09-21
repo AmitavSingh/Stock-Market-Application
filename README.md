@@ -7,3 +7,6 @@ User can search for a company in the list and see the details of that stock in t
 
 This app is built with all the relevant concepts needed to build a solid app with the clean architectural guidelines.
 The app uses dependency injection with Dagger-Hilt, SOLID principles, CSV parsing with OpenCSV, remote APIs using Retrofit, local caching with Room database. 
+
+<h3> Company Listing Screen</h3>
+<img src="CompanyListing.png" width="300px">
