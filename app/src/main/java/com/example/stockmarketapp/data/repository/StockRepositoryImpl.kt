@@ -38,19 +38,19 @@ class StockRepositoryImpl @Inject constructor(
 
             val isdbEmpty = localListings.isEmpty() && query.isBlank()
             val shouldJustLoadFromCache = !isdbEmpty && !fetchFromRemote
-            if(shouldJustLoadFromCache){
+            if (shouldJustLoadFromCache) {
                 emit(Resource.Loading(isLoading = false))
                 return@flow
             }
 
             val remoteListing = try {
-               val response = api.getListings()
+                val response = api.getListings()
                 companyListingParser.parse(response.byteStream())
-            }catch (ex: IOException){
+            } catch (ex: IOException) {
                 ex.printStackTrace()
                 emit(Resource.Error(message = "Failed to load  data"))
                 null
-            }catch (ex: HttpException){
+            } catch (ex: HttpException) {
                 ex.printStackTrace()
                 emit(Resource.Error(message = "Failed to load  data"))
                 null
