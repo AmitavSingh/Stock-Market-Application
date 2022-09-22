@@ -10,3 +10,6 @@ The app uses dependency injection with Dagger-Hilt, SOLID principles, CSV parsin
 
 <h3> Company Listing Screen</h3>
 <img src="CompanyListing.png" width="300px">
+
+<h3> Company Search</h3>
+<img src="CompanySearch.png" width="300px">
